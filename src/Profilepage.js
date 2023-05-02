@@ -10,7 +10,7 @@ const ProfilePage = ()=>{
 
     fetch(`https://dummyjson.com/users/${id}`)
     .then((res)=>{
-        return res.json()
+        return res.json();
     }).then((res)=>{
         console.log("response",res)
         setUser(res);
